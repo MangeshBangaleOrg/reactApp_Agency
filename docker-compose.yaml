@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  reactapp:
+    container_name: react-app
+    image: react-app
+    build:
+      context: .
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+      - ./node_modules
+          
